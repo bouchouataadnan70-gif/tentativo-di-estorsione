@@ -2,28 +2,20 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>💘 Valentine</title>
+  <title>Valentine</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
+  <div class="container">
+    <h1 id="question">Vuoi essere la mia Valentine?</h1>
 
-  <h1 id="question">Vuoi essere la mia Valentine?</h1>
-  <button id="yes">Sì 💖</button>
-  <button id="no">No 😢</button>
+    <div class="buttons">
+      <button id="yes">Sì</button>
+      <button id="no">No</button>
+    </div>
+  </div>
 
-  <script>
-    document.getElementById("yes").onclick = () => {
-      document.getElementById("question").innerText =
-        "💖 Sapevo che avresti detto sì!";
-    };
-
-    document.getElementById("no").onmouseover = () => {
-      const btn = document.getElementById("no");
-      btn.style.transform =
-        `translate(${Math.random()*200-100}px, ${Math.random()*200-100}px)`;
-    };
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
