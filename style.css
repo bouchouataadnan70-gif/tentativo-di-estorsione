@@ -6,4 +6,44 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+button {
+  font-size: 32px;
+  padding: 20px 60px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#yes {
+  background-color: #3cb371; /* verde */
+  color: white;
+}
+
+#no {
+  background-color: #ff69b4; /* rosa */
+  color: white;
+  position: relative;
 }
