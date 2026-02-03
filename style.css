@@ -14,8 +14,8 @@ body {
 }
 
 .container {
-  background: transparent; /* IMPORTANTISSIMO */
   text-align: center;
+  background: transparent;
 }
 
 h1 {
@@ -39,12 +39,38 @@ button {
 }
 
 #yes {
-  background-color: #3cb371;
+  background-color: #3cb371; /* verde */
   color: white;
 }
 
 #no {
-  background-color: #ff69b4;
+  background-color: #ff69b4; /* rosa */
   color: white;
   position: relative;
+}
+
+/* ---- EFFETTO FUOCHI ---- */
+.final-text {
+  font-size: 64px;
+  color: white;
+  animation: pop 0.6s ease-out;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.spark {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, pink, green);
+  border-radius: 50%;
+  animation: explode 2s ease-out forwards;
+}
+
+@keyframes explode {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(6); opacity: 0; }
 }
